@@ -1,5 +1,5 @@
-# Base image with Node.js 18 on Linux
-FROM node:18-bullseye-slim
+# Base image with Node.js 18 on Linux (Debian Bookworm for active package repositories)
+FROM node:18-bookworm-slim
 
 # Install system dependencies: Linux FFmpeg with libass & fontconfig for custom captions
 RUN apt-get update && apt-get install -y \
